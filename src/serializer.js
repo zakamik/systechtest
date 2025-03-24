@@ -169,7 +169,7 @@ tests.forEach(({ testArray, descr }) => {
         console.log(`Оригинал: ${JSON.stringify(testArray)}, элементов: ${testArray.length}`);
         console.log(`Сжатая строка: ${serialized}`);
         console.log(`Результат десериализации: ${JSON.stringify(deserialized)}`);
-        console.log(`Сжатие: ${serialized.length} байт ${compressRatio.toFixed(1)}%`);
+        console.log(`Сжатие (было/стало): ${originalSize}/${compressedSize} байт ${compressRatio.toFixed(1)}%`);
 
         console.log(`Соответствие: ${isEqual ? 'Совпало' : 'Не совпало!'}`);
         console.log('---');
